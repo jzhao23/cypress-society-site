@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cypress Society</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Instrument+Sans:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Instrument Sans', Helvetica, sans-serif;
+    background: #f5f2ed;
+    color: #2c2c28;
+    min-height: 100vh;
+  }
+
+  header {
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  header .wordmark {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  header .location {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #9a958c;
+  }
+
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 48px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 0;
+    min-height: 75vh;
+    align-items: start;
+  }
+
+  .left {
+    padding-right: 64px;
+    padding-top: 40px;
+  }
+
+  .rule {
+    background: #d8d4cc;
+    width: 1px;
+  }
+
+  .right {
+    padding-left: 64px;
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 36px;
+    letter-spacing: -0.01em;
+  }
+
+  .description {
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #5a5750;
+    max-width: 420px;
+  }
+
+  .right-label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #9a958c;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d8d4cc;
+  }
+
+  .event-block {
+    margin-bottom: 48px;
+  }
+
+  .event-block .speaker {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  .event-block .talk-title {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #7a756c;
+    margin-bottom: 16px;
+  }
+
+  .event-block .date {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: #9a958c;
+    letter-spacing: 0.04em;
+  }
+
+  .note {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: #9a958c;
+    margin-bottom: 48px;
+    line-height: 1.7;
+  }
+
+  .contact-section {
+    padding-top: 32px;
+    border-top: 1px solid #d8d4cc;
+  }
+
+  .contact-section .label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #9a958c;
+    margin-bottom: 14px;
+  }
+
+  .contact-section a {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.05rem;
+    color: #5a5750;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc8c0;
+    transition: border-color 0.3s;
+  }
+
+  .contact-section a:hover {
+    border-color: #5a5750;
+  }
+
+  footer {
+    padding: 24px 48px;
+    font-size: 0.68rem;
+    color: #b8b4ac;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+      padding: 40px 24px;
+    }
+    .rule { display: none; }
+    .left { padding-right: 0; padding-top: 0; margin-bottom: 48px; }
+    .right { padding-left: 0; padding-top: 0; }
+    h1 { font-size: 2.6rem; }
+    header { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <span class="wordmark">Cypress Society</span>
+    <span class="location">San Francisco, CA</span>
+  </header>
+
+  <main class="main">
+    <div class="left">
+      <h1>Cypress<br>Society</h1>
+      <p class="description">
+        A philosophical society in San Francisco dedicated to serious inquiry into the ideas that shape public life. We inherit the American tradition of the public lecture, making the ideas of singular thinkers open to all while maintaining intellectual rigor.
+      </p>
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="right">
+      <p class="right-label">Upcoming</p>
+
+      <div class="event-block">
+        <p class="speaker">Russell Berman</p>
+        <p class="talk-title">Faith and Reason</p>
+        <p class="date">April 7, 2026</p>
+      </div>
+
+      <p class="note">
+        This is our inaugural lecture. Further events will be announced in the coming months.
+      </p>
+
+      <div class="contact-section">
+        <p class="label">Inquiries</p>
+        <a href="mailto:hello@cypresssociety.org">hello@cypresssociety.org</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Est. 2026
+  </footer>
+</body>
+</html>
