@@ -195,6 +195,17 @@
     display: block;
   }
 
+  .colophon a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .colophon a:hover {
+    color: #b0aca4;
+    text-shadow: 0 0 0.3px currentColor;
+  }
+
   @media (max-width: 768px) {
     .main {
       grid-template-columns: 1fr;
@@ -246,8 +257,8 @@
   <footer>
     San Francisco, CA
     <div class="colophon">
-      <span>Jason Zhao · Bohan Lou · Ashley Zhang</span>
-      <span>With the support of Jake Greenspan</span>
+      <span><a href="https://jasonjinzhao.com/" target="_blank" rel="noopener">Jason Zhao</a> · <a href="https://www.chemistry.vc/team/bohan-lou" target="_blank" rel="noopener">Bohan Lou</a> · <a href="https://www.ashleydzhang.com/" target="_blank" rel="noopener">Ashley Zhang</a></span>
+      <span>With the support of Jake Greenspan · <a href="https://charlesyang.io/" target="_blank" rel="noopener">Charles Yang</a> · <a href="https://www.plymouthstreet.com/" target="_blank" rel="noopener">Plymouth Street</a></span>
     </div>
   </footer>
 </body>
